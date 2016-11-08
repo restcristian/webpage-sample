@@ -1,0 +1,11 @@
+{
+  "name": "elipsis_project",
+  "version": "1.0.0",
+  "description": "PSD to HTML5 practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
