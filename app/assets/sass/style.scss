@@ -27,6 +27,11 @@ section {
     background-attachment: fixed;
 }
 
+.responsive-background-no-fixed{
+    @extend .responsive-background;
+    background-attachment: scroll;
+}
+
 section#hero {
     background-image: url('../imgs/hero_background.png');
     @extend .responsive-background;
@@ -157,17 +162,41 @@ section#our-works{
         .our-work-panel{
             width:450px; 
             height: 230px;
-            border:1px solid #00ff00;
             flex-grow:1;
            margin:10px;
            // margin-right: 10px;
             position:relative;
 
+            &:nth-child(1){
+                background-image: url('../imgs/work1.png');
+                @extend .responsive-background-no-fixed;
+            }
+
             &:nth-child(2){
+                background-image: url('../imgs/work2.png');
                 flex-grow: 3;
+                @extend .responsive-background-no-fixed;
+            }
+
+            &:nth-child(3){
+                background-image: url('../imgs/work3.png');
+                @extend .responsive-background-no-fixed;
+            }
+
+            
+            &:nth-child(4){
+                background-image: url('../imgs/work4.png');
+                @extend .responsive-background-no-fixed;
             }
             &:nth-child(5){
+                background-image: url('../imgs/work5.png');
+                @extend .responsive-background-no-fixed;
                 flex-grow: 3;
+            }
+            
+            &:nth-child(6){
+                background-image: url('../imgs/work6.png');
+                @extend .responsive-background-no-fixed;
             }
             &:nth-child(3n){
                 margin-right:0;
@@ -175,7 +204,12 @@ section#our-works{
 
             & .our-work-title{
                 position:absolute;
-                bottom:0;
+                bottom:41px;
+                left:48px;
+                text-transform: uppercase;
+                color:#fff;
+                
+
             }
         }
     }

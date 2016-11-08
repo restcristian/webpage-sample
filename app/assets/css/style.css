@@ -47,11 +47,14 @@ body {
 section {
   width: 100%; }
 
-.responsive-background, section#hero {
+.responsive-background, .responsive-background-no-fixed, section#our-works .flex-container .our-work-panel:nth-child(1), section#our-works .flex-container .our-work-panel:nth-child(2), section#our-works .flex-container .our-work-panel:nth-child(3), section#our-works .flex-container .our-work-panel:nth-child(4), section#our-works .flex-container .our-work-panel:nth-child(5), section#our-works .flex-container .our-work-panel:nth-child(6), section#hero {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
+
+.responsive-background-no-fixed, section#our-works .flex-container .our-work-panel:nth-child(1), section#our-works .flex-container .our-work-panel:nth-child(2), section#our-works .flex-container .our-work-panel:nth-child(3), section#our-works .flex-container .our-work-panel:nth-child(4), section#our-works .flex-container .our-work-panel:nth-child(5), section#our-works .flex-container .our-work-panel:nth-child(6) {
+  background-attachment: scroll; }
 
 section#hero {
   background-image: url("../imgs/hero_background.png");
@@ -159,16 +162,28 @@ section#our-works .flex-container {
   section#our-works .flex-container .our-work-panel {
     width: 450px;
     height: 230px;
-    border: 1px solid #00ff00;
     flex-grow: 1;
     margin: 10px;
     position: relative; }
+    section#our-works .flex-container .our-work-panel:nth-child(1) {
+      background-image: url("../imgs/work1.png"); }
     section#our-works .flex-container .our-work-panel:nth-child(2) {
+      background-image: url("../imgs/work2.png");
       flex-grow: 3; }
+    section#our-works .flex-container .our-work-panel:nth-child(3) {
+      background-image: url("../imgs/work3.png"); }
+    section#our-works .flex-container .our-work-panel:nth-child(4) {
+      background-image: url("../imgs/work4.png"); }
     section#our-works .flex-container .our-work-panel:nth-child(5) {
+      background-image: url("../imgs/work5.png");
       flex-grow: 3; }
+    section#our-works .flex-container .our-work-panel:nth-child(6) {
+      background-image: url("../imgs/work6.png"); }
     section#our-works .flex-container .our-work-panel:nth-child(3n) {
       margin-right: 0; }
     section#our-works .flex-container .our-work-panel .our-work-title {
       position: absolute;
-      bottom: 0; }
+      bottom: 41px;
+      left: 48px;
+      text-transform: uppercase;
+      color: #fff; }
