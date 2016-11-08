@@ -45,15 +45,16 @@ body {
   height: 100%; }
 
 section {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
-.responsive-background, .responsive-background-no-fixed, section#our-works .flex-container .our-work-panel:nth-child(1), section#our-works .flex-container .our-work-panel:nth-child(2), section#our-works .flex-container .our-work-panel:nth-child(3), section#our-works .flex-container .our-work-panel:nth-child(4), section#our-works .flex-container .our-work-panel:nth-child(5), section#our-works .flex-container .our-work-panel:nth-child(6), section#hero {
+.responsive-background, .responsive-background-no-fixed, section#services, section#our-works .flex-container .our-work-panel, section#hero {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
 
-.responsive-background-no-fixed, section#our-works .flex-container .our-work-panel:nth-child(1), section#our-works .flex-container .our-work-panel:nth-child(2), section#our-works .flex-container .our-work-panel:nth-child(3), section#our-works .flex-container .our-work-panel:nth-child(4), section#our-works .flex-container .our-work-panel:nth-child(5), section#our-works .flex-container .our-work-panel:nth-child(6) {
+.responsive-background-no-fixed, section#services, section#our-works .flex-container .our-work-panel {
   background-attachment: scroll; }
 
 section#hero {
@@ -117,20 +118,26 @@ section#about-us {
 
 section#services {
   background-image: url("../imgs/services_background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding-top: 125px;
   padding-bottom: 108px; }
   section#services .part-square-container {
     border-color: #fff;
     color: #fff; }
     section#services .part-square-container .square-title {
-      background-color: #000; }
+      background-image: url("../imgs/bulto.png");
+      background-size: cover; }
 
 section#what-we-do {
-  padding-top: 120px;
-  padding-bottom: 120px; }
+  padding-top: 114px;
+  padding-bottom: 114px; }
+  section#what-we-do .what-we-do-container {
+    margin-top: 120px; }
+    section#what-we-do .what-we-do-container .what-element {
+      margin: 0 auto; }
+      section#what-we-do .what-we-do-container .what-element .img-desc {
+        text-align: center; }
+        section#what-we-do .what-we-do-container .what-element .img-desc .wwd-title {
+          font-weight: bold; }
 
 section#contact-us {
   padding-top: 114px;
@@ -186,4 +193,7 @@ section#our-works .flex-container {
       bottom: 41px;
       left: 48px;
       text-transform: uppercase;
-      color: #fff; }
+      color: #fff;
+      font-weight: bold;
+      font-family: 'Lato', 'Myriad Pro';
+      letter-spacing: 7px; }

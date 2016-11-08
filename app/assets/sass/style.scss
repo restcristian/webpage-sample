@@ -18,6 +18,7 @@ body {
 
 section {
     width: 100%;
+    position: relative;
 }
 
 .responsive-background {
@@ -27,7 +28,7 @@ section {
     background-attachment: fixed;
 }
 
-.responsive-background-no-fixed{
+.responsive-background-no-fixed {
     @extend .responsive-background;
     background-attachment: scroll;
 }
@@ -104,26 +105,43 @@ section#about-us {
     padding-top: 160px;
 }
 
+section#what-we-do{
+
+}
+
 section#services {
     background-image: url('../imgs/services_background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
+    @extend .responsive-background-no-fixed;
     padding-top: 125px;
     padding-bottom: 108px;
     & .part-square-container {
         border-color: #fff;
         color: #fff;
         & .square-title {
-            background-color: #000;
+            background-image: url('../imgs/bulto.png');
+            background-size: cover;
         }
     }
 }
 
 section#what-we-do {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 114px;
+    padding-bottom: 114px;
+    .what-we-do-container{
+        margin-top:120px;
+        & .what-element{
+            margin:0 auto;
+
+            & .img-desc{
+                text-align:center;
+
+                & .wwd-title{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
 }
 
 section#contact-us {
@@ -142,7 +160,7 @@ section#contact-us {
             font-size: 1em;
             max-width: 395px;
             text-transform: uppercase;
-            margin-top:45px;
+            margin-top: 45px;
             &:hover {
                 cursor: pointer;
             }
@@ -150,66 +168,54 @@ section#contact-us {
     }
 }
 
-section#our-works{
-    .flex-container{
-        display:flex;
+section#our-works {
+    .flex-container {
+        display: flex;
         flex-direction: row;
-        width:100%;
-        flex-wrap:wrap;
+        width: 100%;
+        flex-wrap: wrap;
         align-items: flex-start;
-        justify-content:space-between;
-
-        .our-work-panel{
-            width:450px; 
+        justify-content: space-between;
+        .our-work-panel {
+            width: 450px;
             height: 230px;
-            flex-grow:1;
-           margin:10px;
-           // margin-right: 10px;
-            position:relative;
-
-            &:nth-child(1){
+            flex-grow: 1;
+            margin: 10px;
+            // margin-right: 10px;
+            position: relative;
+            @extend .responsive-background-no-fixed;
+            &:nth-child(1) {
                 background-image: url('../imgs/work1.png');
-                @extend .responsive-background-no-fixed;
             }
-
-            &:nth-child(2){
+            &:nth-child(2) {
                 background-image: url('../imgs/work2.png');
                 flex-grow: 3;
-                @extend .responsive-background-no-fixed;
             }
-
-            &:nth-child(3){
+            &:nth-child(3) {
                 background-image: url('../imgs/work3.png');
-                @extend .responsive-background-no-fixed;
             }
-
-            
-            &:nth-child(4){
+            &:nth-child(4) {
                 background-image: url('../imgs/work4.png');
-                @extend .responsive-background-no-fixed;
             }
-            &:nth-child(5){
+            &:nth-child(5) {
                 background-image: url('../imgs/work5.png');
-                @extend .responsive-background-no-fixed;
                 flex-grow: 3;
             }
-            
-            &:nth-child(6){
+            &:nth-child(6) {
                 background-image: url('../imgs/work6.png');
-                @extend .responsive-background-no-fixed;
             }
-            &:nth-child(3n){
-                margin-right:0;
+            &:nth-child(3n) {
+                margin-right: 0;
             }
-
-            & .our-work-title{
-                position:absolute;
-                bottom:41px;
-                left:48px;
+            & .our-work-title {
+                position: absolute;
+                bottom: 41px;
+                left: 48px;
                 text-transform: uppercase;
-                color:#fff;
-                
-
+                color: #fff;
+                font-weight: bold;
+                font-family: 'Lato', 'Myriad Pro';
+                letter-spacing: 7px;
             }
         }
     }
