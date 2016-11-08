@@ -36,27 +36,72 @@ table {
 .container {
   box-sizing: border-box; }
 
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
 section {
   width: 100%; }
 
 section#hero {
   background-image: url("../imgs/hero_background.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 280px;
+  padding-bottom: 112px; }
   section#hero header {
-    padding-top: 280px;
-    text-align: center; }
+    text-align: center;
+    font-family: "Lato", "Myriad Pro";
+    max-width: 585px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase; }
     section#hero header .hero-title {
-      font-family: "Lato", "Myriad Pro";
       color: #fff;
       font-size: 3.375em;
       font-weight: bold;
-      max-width: 585px;
       margin-top: 85px;
       margin-left: auto;
       margin-right: auto;
       letter-spacing: 10px; }
+    section#hero header .hero-text {
+      color: #fff;
+      margin-top: 54px;
+      font-size: 0.9375em;
+      line-height: 1.6em; }
+    section#hero header .hero-baina {
+      margin-top: 245px; }
 
-.wrapper {
-  max-width: 980px;
-  margin: 0 auto; }
+.part-square-container {
+  max-width: 900px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  border: 2px solid #3c3c3c;
+  position: relative;
+  margin-top: 125px;
+  font-family: 'Lato','Myriad Pro'; }
+  .part-square-container .square-title {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 2.125em;
+    letter-spacing: 7px;
+    color: #3c3c3c;
+    font-weight: bold;
+    background-color: #fff;
+    left: 25%;
+    top: -5%;
+    padding-left: 105px;
+    padding-right: 105px; }
+  .part-square-container .square-text {
+    margin-top: 62px;
+    padding-left: 180px;
+    padding-right: 180px;
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.3em; }
