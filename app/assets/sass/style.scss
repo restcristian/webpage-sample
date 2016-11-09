@@ -20,6 +20,10 @@ body {
 section {
     width: 100%;
     position: relative;
+    @media screen and (max-width:$phoneWidth){
+                    padding-left:10px;
+                    padding-right: 10px;
+                }
 }
 
 .responsive-background {
@@ -191,6 +195,7 @@ section#our-works {
             margin-top: 10px;
             position: relative;
             @extend .responsive-background-no-fixed;
+            
             &:nth-child(1) {
                 background-image: url('../imgs/work1.png');
             }
@@ -213,9 +218,10 @@ section#our-works {
             }
             &:nth-child(3n) {
                 margin-right: 0;
-                @media screen and (max-width:1366px){
+                @media screen and (max-width:$tabletWidth){
                     margin-right:10px;
                 }
+                
             }
             & .our-work-title {
                 position: absolute;

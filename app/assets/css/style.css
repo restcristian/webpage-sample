@@ -47,6 +47,10 @@ body {
 section {
   width: 100%;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    section {
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .responsive-background, .responsive-background-no-fixed, section#services, section#services .part-square-container .square-title, section#our-works .flex-container .our-work-panel, section#hero {
   background-repeat: no-repeat;
