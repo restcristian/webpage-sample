@@ -124,7 +124,7 @@ section#services {
     border-color: #fff;
     color: #fff; }
     section#services .part-square-container .square-title {
-      background-image: url("../imgs/bulto.png");
+      background-color: #a5adc1;
       background-size: cover; }
 
 section#what-we-do {
@@ -150,14 +150,16 @@ section#contact-us {
       border: none;
       color: #fff;
       background-color: #3c3c3c;
-      font-family: 'Myriad Pro';
-      padding: 15px 145px;
+      font-family: 'Lato','Myriad Pro';
+      padding: 23px 145px;
       font-size: 1em;
-      max-width: 395px;
+      font-weight: bold;
       text-transform: uppercase;
-      margin-top: 45px; }
+      margin-top: 45px;
+      letter-spacing: 3px; }
       section#contact-us .button-container .contact-us-button:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: #a5adc1; }
 
 section#our-works .flex-container {
   display: flex;

@@ -118,7 +118,8 @@ section#services {
         border-color: #fff;
         color: #fff;
         & .square-title {
-            background-image: url('../imgs/bulto.png');
+            background-color:#a5adc1;
+            //background-image: url('../imgs/bulto.png');
             background-size: cover;
         }
     }
@@ -155,14 +156,17 @@ section#contact-us {
             border: none;
             color: #fff;
             background-color: #3c3c3c;
-            font-family: 'Myriad Pro';
-            padding: 15px 145px;
+            font-family: 'Lato','Myriad Pro';
+            padding: 23px 145px;
             font-size: 1em;
-            max-width: 395px;
+            font-weight: bold;
+            //max-width: 395px;
             text-transform: uppercase;
             margin-top: 45px;
+            letter-spacing: 3px;
             &:hover {
                 cursor: pointer;
+                background-color:#a5adc1;
             }
         }
     }
