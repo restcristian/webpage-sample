@@ -202,6 +202,9 @@ section#our-works .flex-container {
       background-image: url("../imgs/work6.png"); }
     section#our-works .flex-container .our-work-panel:nth-child(3n) {
       margin-right: 0; }
+      @media screen and (max-width: 1366px) {
+        section#our-works .flex-container .our-work-panel:nth-child(3n) {
+          margin-right: 10px; } }
     section#our-works .flex-container .our-work-panel .our-work-title {
       position: absolute;
       bottom: 41px;

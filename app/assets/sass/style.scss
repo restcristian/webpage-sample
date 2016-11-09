@@ -213,6 +213,9 @@ section#our-works {
             }
             &:nth-child(3n) {
                 margin-right: 0;
+                @media screen and (max-width:1366px){
+                    margin-right:10px;
+                }
             }
             & .our-work-title {
                 position: absolute;
