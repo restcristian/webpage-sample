@@ -46,7 +46,6 @@ section#hero {
         margin-left: auto;
         margin-right: auto;
         text-transform: uppercase;
-        & .logo {}
         & .hero-title {
             color: #fff;
             font-size: 3.375em;
@@ -106,7 +105,6 @@ section#about-us {
     padding-top: 160px;
 }
 
-section#what-we-do {}
 
 section#services {
     background-image: url('../imgs/services_background.png');
@@ -128,7 +126,7 @@ section#what-we-do {
     padding-top: 114px;
     padding-bottom: 114px;
     .what-we-do-container {
-        margin-top: 120px;
+        padding-bottom:88px;
         & .what-we-do-text {
             margin-top: 36px;
         }
