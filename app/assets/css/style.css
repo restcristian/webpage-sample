@@ -48,13 +48,13 @@ section {
   width: 100%;
   position: relative; }
 
-.responsive-background, .responsive-background-no-fixed, section#services, section#our-works .flex-container .our-work-panel, section#hero {
+.responsive-background, .responsive-background-no-fixed, section#services, section#services .part-square-container .square-title, section#our-works .flex-container .our-work-panel, section#hero {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
 
-.responsive-background-no-fixed, section#services, section#our-works .flex-container .our-work-panel {
+.responsive-background-no-fixed, section#services, section#services .part-square-container .square-title, section#our-works .flex-container .our-work-panel {
   background-attachment: scroll; }
 
 section#hero {
@@ -90,7 +90,7 @@ section#hero {
   margin: 0 auto;
   border: 2px solid #3c3c3c;
   position: relative;
-  font-family: 'Lato', 'Myriad Pro';
+  font-family: "Lato", "Myriad Pro";
   color: #3c3c3c; }
   .part-square-container .square-title {
     position: absolute;
@@ -123,7 +123,9 @@ section#services {
     border-color: #fff;
     color: #fff; }
     section#services .part-square-container .square-title {
-      background-color: #a5adc1;
+      padding-left: 115px;
+      padding-right: 115px;
+      background-image: url("../imgs/bulto.png");
       background-size: cover; }
 
 section#what-we-do {
@@ -154,7 +156,7 @@ section#contact-us {
       border: none;
       color: #fff;
       background-color: #3c3c3c;
-      font-family: 'Lato', 'Myriad Pro';
+      font-family: "Lato", "Myriad Pro";
       padding: 23px 145px;
       font-size: 1em;
       font-weight: bold;
@@ -207,7 +209,7 @@ section#our-works .flex-container {
       text-transform: uppercase;
       color: #fff;
       font-weight: bold;
-      font-family: 'Lato', 'Myriad Pro';
+      font-family: "Lato", "Myriad Pro";
       letter-spacing: 7px; }
 
 section#footer footer {
@@ -218,7 +220,7 @@ section#footer footer {
     margin-right: 36px; }
   section#footer footer .footer-copy-text {
     display: inline;
-    font-family: 'Lato', 'Myriad Pro';
+    font-family: "Lato", "Myriad Pro";
     font-size: 0.875em;
     position: relative;
     top: -10px; }

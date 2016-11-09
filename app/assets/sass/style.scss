@@ -54,6 +54,7 @@ section#hero {
             margin-left: auto;
             margin-right: auto;
             letter-spacing: 10px;
+            
         }
         .hero-text {
             color: $colorWhite;
@@ -74,7 +75,7 @@ section#hero {
     margin: 0 auto;
     border: 2px solid $colorGray;
     position: relative;
-    font-family: 'Lato', 'Myriad Pro';
+    font-family: $fontList;
     color: $colorGray;
     & .square-title {
         position: absolute;
@@ -112,8 +113,11 @@ section#services {
         border-color: $colorWhite;
         color: $colorWhite;
         & .square-title {
-            background-color: $colorPurple;
-            //background-image: url('../imgs/bulto.png');
+            padding-left:115px;
+            padding-right:115px;
+            @extend .responsive-background-no-fixed;
+            //background-color: $colorPurple;
+            background-image: url('../imgs/bulto.png');
             background-size: cover;
         }
     }
@@ -153,7 +157,7 @@ section#contact-us {
             border: none;
             color: $colorWhite;
             background-color: $colorGray;
-            font-family: 'Lato', 'Myriad Pro';
+            font-family: $fontList;
             padding: 23px 145px;
             font-size: 1em;
             font-weight: bold;
@@ -217,7 +221,7 @@ section#our-works {
                 text-transform: uppercase;
                 color: $colorWhite;
                 font-weight: bold;
-                font-family: 'Lato', 'Myriad Pro';
+                font-family: $fontList;
                 letter-spacing: 7px;
             }
         }
@@ -234,7 +238,7 @@ section#footer {
         }
         & .footer-copy-text {
             display: inline;
-            font-family: 'Lato', 'Myriad Pro';
+            font-family: $fontList;
             font-size: 0.875em;
             position: relative;
             top: -10px;
