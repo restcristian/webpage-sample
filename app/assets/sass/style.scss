@@ -1,8 +1,8 @@
 @import 'reset';
 @import 'mixins';
+@import 'variables';
 @import 'https://fonts.googleapis.com/css?family=Lato';
-*,
-.container {
+* {
     box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@ section#hero {
         margin-right: auto;
         text-transform: uppercase;
         & .hero-title {
-            color: #fff;
+            color: $colorWhite;
             font-size: 3.375em;
             font-weight: bold;
             margin-top: 85px;
@@ -56,7 +56,7 @@ section#hero {
             letter-spacing: 10px;
         }
         .hero-text {
-            color: #fff;
+            color: $colorWhite;
             margin-top: 54px;
             font-size: 0.9375em;
             line-height: 1.6em;
@@ -72,18 +72,17 @@ section#hero {
     max-width: 900px;
     padding-bottom: 50px;
     margin: 0 auto;
-    border: 2px solid #3c3c3c;
+    border: 2px solid $colorGray;
     position: relative;
-    // margin-top:125px;
     font-family: 'Lato', 'Myriad Pro';
-    color: #3c3c3c;
+    color: $colorGray;
     & .square-title {
         position: absolute;
         text-transform: uppercase;
         font-size: 2.125em;
         letter-spacing: 7px;
         font-weight: bold;
-        background-color: #fff;
+        background-color: $colorWhite;
         left: 25%;
         top: -20px;
         padding-left: 105px;
@@ -92,8 +91,7 @@ section#hero {
     & .square-text {
         text-align: center;
         font-size: 1em;
-        font-weight: bold;
-        line-height: 1.3em;
+        line-height: 1.7em;
         max-width: 555px;
         margin: 0 auto;
         margin-top: 62px;
@@ -105,17 +103,16 @@ section#about-us {
     padding-top: 160px;
 }
 
-
 section#services {
     background-image: url('../imgs/services_background.png');
     @extend .responsive-background-no-fixed;
     padding-top: 125px;
     padding-bottom: 108px;
     & .part-square-container {
-        border-color: #fff;
-        color: #fff;
+        border-color: $colorWhite;
+        color: $colorWhite;
         & .square-title {
-            background-color: #a5adc1;
+            background-color: $colorPurple;
             //background-image: url('../imgs/bulto.png');
             background-size: cover;
         }
@@ -126,7 +123,7 @@ section#what-we-do {
     padding-top: 114px;
     padding-bottom: 114px;
     .what-we-do-container {
-        padding-bottom:88px;
+        padding-bottom: 88px;
         & .what-we-do-text {
             margin-top: 36px;
         }
@@ -154,8 +151,8 @@ section#contact-us {
             outline: 0;
             margin: 0;
             border: none;
-            color: #fff;
-            background-color: #3c3c3c;
+            color: $colorWhite;
+            background-color: $colorGray;
             font-family: 'Lato', 'Myriad Pro';
             padding: 23px 145px;
             font-size: 1em;
@@ -168,7 +165,7 @@ section#contact-us {
             background-color .3s ease);
             &:hover {
                 cursor: pointer;
-                background-color: #a5adc1;
+                background-color: $colorPurple;
             }
         }
     }
@@ -218,7 +215,7 @@ section#our-works {
                 bottom: 41px;
                 left: 48px;
                 text-transform: uppercase;
-                color: #fff;
+                color: $colorWhite;
                 font-weight: bold;
                 font-family: 'Lato', 'Myriad Pro';
                 letter-spacing: 7px;
@@ -230,6 +227,7 @@ section#our-works {
 section#footer {
     footer {
         text-align: center;
+        margin-bottom:65px;
         & .footer-img-container {
             display: inline;
             margin-right: 36px;
@@ -238,7 +236,6 @@ section#footer {
             display: inline;
             font-family: 'Lato', 'Myriad Pro';
             font-size: 0.875em;
-            font-weight: bold;
             position: relative;
             top: -10px;
         }

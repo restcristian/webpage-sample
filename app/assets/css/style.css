@@ -32,8 +32,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-*,
-.container {
+* {
   box-sizing: border-box; }
 
 .wrapper {
@@ -107,8 +106,7 @@ section#hero {
   .part-square-container .square-text {
     text-align: center;
     font-size: 1em;
-    font-weight: bold;
-    line-height: 1.3em;
+    line-height: 1.7em;
     max-width: 555px;
     margin: 0 auto;
     margin-top: 62px; }
@@ -213,7 +211,8 @@ section#our-works .flex-container {
       letter-spacing: 7px; }
 
 section#footer footer {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 65px; }
   section#footer footer .footer-img-container {
     display: inline;
     margin-right: 36px; }
@@ -221,6 +220,5 @@ section#footer footer {
     display: inline;
     font-family: 'Lato', 'Myriad Pro';
     font-size: 0.875em;
-    font-weight: bold;
     position: relative;
     top: -10px; }
