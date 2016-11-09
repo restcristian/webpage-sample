@@ -9,7 +9,7 @@
 .wrapper {
     max-width: 980px;
     margin: 0 auto;
-    position:relative;
+    position: relative;
 }
 
 body {
@@ -106,9 +106,7 @@ section#about-us {
     padding-top: 160px;
 }
 
-section#what-we-do{
-
-}
+section#what-we-do {}
 
 section#services {
     background-image: url('../imgs/services_background.png');
@@ -119,7 +117,7 @@ section#services {
         border-color: #fff;
         color: #fff;
         & .square-title {
-            background-color:#a5adc1;
+            background-color: #a5adc1;
             //background-image: url('../imgs/bulto.png');
             background-size: cover;
         }
@@ -129,28 +127,24 @@ section#services {
 section#what-we-do {
     padding-top: 114px;
     padding-bottom: 114px;
-    .what-we-do-container{
-        margin-top:120px;
-
-        & .what-we-do-text{
-            margin-top:36px;
+    .what-we-do-container {
+        margin-top: 120px;
+        & .what-we-do-text {
+            margin-top: 36px;
         }
-        & .what-element{
-            margin:0 auto;
-
-            & .img-desc{
-                text-align:center;
-                margin-top:110px;
-
-                & .wwd-title{
+        & .what-element {
+            margin: 0 auto;
+            & .img-desc {
+                text-align: center;
+                margin-top: 110px;
+                & .wwd-title {
                     font-weight: bold;
-                    margin-top:41px;
+                    margin-top: 41px;
                     letter-spacing: 5px;
                 }
             }
         }
     }
-
 }
 
 section#contact-us {
@@ -164,7 +158,7 @@ section#contact-us {
             border: none;
             color: #fff;
             background-color: #3c3c3c;
-            font-family: 'Lato','Myriad Pro';
+            font-family: 'Lato', 'Myriad Pro';
             padding: 23px 145px;
             font-size: 1em;
             font-weight: bold;
@@ -172,10 +166,11 @@ section#contact-us {
             text-transform: uppercase;
             margin-top: 45px;
             letter-spacing: 3px;
-            @include prefix(transition, background-color .3s ease);
+            @include prefix(transition,
+            background-color .3s ease);
             &:hover {
                 cursor: pointer;
-                background-color:#a5adc1;
+                background-color: #a5adc1;
             }
         }
     }
@@ -193,8 +188,8 @@ section#our-works {
             width: 450px;
             height: 230px;
             flex-grow: 1;
-            margin: 10px;
-            // margin-right: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
             position: relative;
             @extend .responsive-background-no-fixed;
             &:nth-child(1) {
@@ -234,21 +229,20 @@ section#our-works {
     }
 }
 
-section#footer{
-    footer{
-        text-align:center;
-        & .footer-img-container{
-            display:inline;
-            margin-right:36px;
+section#footer {
+    footer {
+        text-align: center;
+        & .footer-img-container {
+            display: inline;
+            margin-right: 36px;
         }
-        & .footer-copy-text{
-            display:inline;
-            font-family: 'Lato','Myriad Pro';
-            font-size:0.875em;
+        & .footer-copy-text {
+            display: inline;
+            font-family: 'Lato', 'Myriad Pro';
+            font-size: 0.875em;
             font-weight: bold;
-            position:relative;
-            top:-10px;
-            
+            position: relative;
+            top: -10px;
         }
     }
 }

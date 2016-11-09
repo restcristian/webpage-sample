@@ -156,7 +156,7 @@ section#contact-us {
       border: none;
       color: #fff;
       background-color: #3c3c3c;
-      font-family: 'Lato','Myriad Pro';
+      font-family: 'Lato', 'Myriad Pro';
       padding: 23px 145px;
       font-size: 1em;
       font-weight: bold;
@@ -183,7 +183,8 @@ section#our-works .flex-container {
     width: 450px;
     height: 230px;
     flex-grow: 1;
-    margin: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
     position: relative; }
     section#our-works .flex-container .our-work-panel:nth-child(1) {
       background-image: url("../imgs/work1.png"); }
@@ -218,7 +219,7 @@ section#footer footer {
     margin-right: 36px; }
   section#footer footer .footer-copy-text {
     display: inline;
-    font-family: 'Lato','Myriad Pro';
+    font-family: 'Lato', 'Myriad Pro';
     font-size: 0.875em;
     font-weight: bold;
     position: relative;
