@@ -20,10 +20,10 @@ body {
 section {
     width: 100%;
     position: relative;
-    @media screen and (max-width:$phoneWidth){
-                    padding-left:10px;
-                    padding-right: 10px;
-                }
+    /*@media screen and (min-width: $phoneWidth) and (max-width: $tabletWidth) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }*/
 }
 
 .responsive-background {
@@ -41,6 +41,10 @@ section {
 section#hero {
     background-image: url('../imgs/hero_background.png');
     @extend .responsive-background;
+    @media screen and (max-width: $phoneWidth) {
+        padding-top: 10px;
+        background-position: -800px 0px;
+    }
     padding-top: 280px;
     padding-bottom: 112px;
     header {
@@ -58,7 +62,6 @@ section#hero {
             margin-left: auto;
             margin-right: auto;
             letter-spacing: 10px;
-            
         }
         .hero-text {
             color: $colorWhite;
@@ -68,6 +71,9 @@ section#hero {
         }
         .hero-baina {
             margin-top: 245px;
+             @media screen and (max-width: $phoneWidth){
+                 display: none;
+             }
         }
     }
 }
@@ -117,8 +123,8 @@ section#services {
         border-color: $colorWhite;
         color: $colorWhite;
         & .square-title {
-            padding-left:115px;
-            padding-right:115px;
+            padding-left: 115px;
+            padding-right: 115px;
             @extend .responsive-background-no-fixed;
             //background-color: $colorPurple;
             background-image: url('../imgs/bulto.png');
@@ -195,7 +201,11 @@ section#our-works {
             margin-top: 10px;
             position: relative;
             @extend .responsive-background-no-fixed;
-            
+
+             @media screen and (max-width: $tabletWidth) {
+                    margin-right: 10px;
+                }
+          
             &:nth-child(1) {
                 background-image: url('../imgs/work1.png');
             }
@@ -205,6 +215,9 @@ section#our-works {
             }
             &:nth-child(3) {
                 background-image: url('../imgs/work3.png');
+                @media screen and (max-width:$tabletWidth){
+                    margin-right:10px;
+                }
             }
             &:nth-child(4) {
                 background-image: url('../imgs/work4.png');
@@ -216,12 +229,18 @@ section#our-works {
             &:nth-child(6) {
                 background-image: url('../imgs/work6.png');
             }
-            &:nth-child(3n) {
-                margin-right: 0;
+
+            &:nth-child(2n){
                 @media screen and (max-width:$tabletWidth){
-                    margin-right:10px;
+                    margin-right:0;
                 }
-                
+            }
+            &:nth-child(3n) {
+                margin-right:0px;
+                 @media screen and (max-width: $phoneWidth) {
+                    margin-right: 0px;
+                    flex-grow:1;
+                }
             }
             & .our-work-title {
                 position: absolute;
@@ -240,7 +259,7 @@ section#our-works {
 section#footer {
     footer {
         text-align: center;
-        margin-bottom:65px;
+        margin-bottom: 65px;
         & .footer-img-container {
             display: inline;
             margin-right: 36px;
