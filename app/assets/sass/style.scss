@@ -9,6 +9,7 @@
 .wrapper {
     max-width: 980px;
     margin: 0 auto;
+    position:relative;
 }
 
 body {
@@ -85,7 +86,7 @@ section#hero {
         font-weight: bold;
         background-color: #fff;
         left: 25%;
-        top: -5%;
+        top: -20px;
         padding-left: 105px;
         padding-right: 105px;
     }
@@ -130,14 +131,21 @@ section#what-we-do {
     padding-bottom: 114px;
     .what-we-do-container{
         margin-top:120px;
+
+        & .what-we-do-text{
+            margin-top:36px;
+        }
         & .what-element{
             margin:0 auto;
 
             & .img-desc{
                 text-align:center;
+                margin-top:110px;
 
                 & .wwd-title{
                     font-weight: bold;
+                    margin-top:41px;
+                    letter-spacing: 5px;
                 }
             }
         }
@@ -164,6 +172,7 @@ section#contact-us {
             text-transform: uppercase;
             margin-top: 45px;
             letter-spacing: 3px;
+            @include prefix(transition, background-color .3s ease);
             &:hover {
                 cursor: pointer;
                 background-color:#a5adc1;
@@ -221,6 +230,25 @@ section#our-works {
                 font-family: 'Lato', 'Myriad Pro';
                 letter-spacing: 7px;
             }
+        }
+    }
+}
+
+section#footer{
+    footer{
+        text-align:center;
+        & .footer-img-container{
+            display:inline;
+            margin-right:36px;
+        }
+        & .footer-copy-text{
+            display:inline;
+            font-family: 'Lato','Myriad Pro';
+            font-size:0.875em;
+            font-weight: bold;
+            position:relative;
+            top:-10px;
+            
         }
     }
 }

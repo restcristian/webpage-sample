@@ -38,7 +38,8 @@ table {
 
 .wrapper {
   max-width: 980px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 body {
   width: 100%;
@@ -100,7 +101,7 @@ section#hero {
     font-weight: bold;
     background-color: #fff;
     left: 25%;
-    top: -5%;
+    top: -20px;
     padding-left: 105px;
     padding-right: 105px; }
   .part-square-container .square-text {
@@ -132,12 +133,17 @@ section#what-we-do {
   padding-bottom: 114px; }
   section#what-we-do .what-we-do-container {
     margin-top: 120px; }
+    section#what-we-do .what-we-do-container .what-we-do-text {
+      margin-top: 36px; }
     section#what-we-do .what-we-do-container .what-element {
       margin: 0 auto; }
       section#what-we-do .what-we-do-container .what-element .img-desc {
-        text-align: center; }
+        text-align: center;
+        margin-top: 110px; }
         section#what-we-do .what-we-do-container .what-element .img-desc .wwd-title {
-          font-weight: bold; }
+          font-weight: bold;
+          margin-top: 41px;
+          letter-spacing: 5px; }
 
 section#contact-us {
   padding-top: 114px;
@@ -156,7 +162,12 @@ section#contact-us {
       font-weight: bold;
       text-transform: uppercase;
       margin-top: 45px;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      -webkit-transition: background-color 0.3s ease;
+      -moz-transition: background-color 0.3s ease;
+      -ms-transition: background-color 0.3s ease;
+      -o-transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease; }
       section#contact-us .button-container .contact-us-button:hover {
         cursor: pointer;
         background-color: #a5adc1; }
@@ -199,3 +210,16 @@ section#our-works .flex-container {
       font-weight: bold;
       font-family: 'Lato', 'Myriad Pro';
       letter-spacing: 7px; }
+
+section#footer footer {
+  text-align: center; }
+  section#footer footer .footer-img-container {
+    display: inline;
+    margin-right: 36px; }
+  section#footer footer .footer-copy-text {
+    display: inline;
+    font-family: 'Lato','Myriad Pro';
+    font-size: 0.875em;
+    font-weight: bold;
+    position: relative;
+    top: -10px; }
