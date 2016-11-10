@@ -40,7 +40,8 @@ table {
   margin: 0 auto;
   position: relative; }
 
-body, .container {
+body,
+.container {
   width: 100%;
   height: 100%; }
 
@@ -151,6 +152,12 @@ section#services {
       padding-right: 115px;
       background-image: url("../imgs/bulto.png");
       background-size: cover; }
+      @media screen and (max-width: 768px) {
+        section#services .part-square-container .square-title {
+          font-size: 1.4em;
+          padding-right: 10px;
+          padding-left: 10px;
+          top: -13px; } }
 
 section#what-we-do {
   padding-top: 114px;
@@ -192,6 +199,10 @@ section#contact-us {
       -ms-transition: background-color 0.3s ease;
       -o-transition: background-color 0.3s ease;
       transition: background-color 0.3s ease; }
+      @media screen and (max-width: 768px) {
+        section#contact-us .button-container .contact-us-button {
+          padding-right: 20%;
+          padding-left: 20%; } }
       section#contact-us .button-container .contact-us-button:hover {
         cursor: pointer;
         background-color: #a5adc1; }
