@@ -180,7 +180,8 @@ section#contact-us {
   padding-top: 114px;
   padding-bottom: 114px; }
   section#contact-us .button-container {
-    text-align: center; }
+    text-align: center;
+    margin-top: 45px; }
     section#contact-us .button-container .contact-us-button {
       outline: 0;
       margin: 0;
@@ -192,7 +193,6 @@ section#contact-us {
       font-size: 1em;
       font-weight: bold;
       text-transform: uppercase;
-      margin-top: 45px;
       letter-spacing: 3px;
       -webkit-transition: background-color 0.3s ease;
       -moz-transition: background-color 0.3s ease;
