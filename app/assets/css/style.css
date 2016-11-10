@@ -40,17 +40,13 @@ table {
   margin: 0 auto;
   position: relative; }
 
-body {
+body, .container {
   width: 100%;
   height: 100%; }
 
 section {
   width: 100%;
-  position: relative;
-  /*@media screen and (min-width: $phoneWidth) and (max-width: $tabletWidth) {
-        padding-left: 10px;
-        padding-right: 10px;
-    }*/ }
+  position: relative; }
 
 .responsive-background, .responsive-background-no-fixed, section#services, section#services .part-square-container .square-title, section#our-works .flex-container .our-work-panel, section#hero {
   background-repeat: no-repeat;
@@ -68,7 +64,7 @@ section#hero {
   @media screen and (max-width: 768px) {
     section#hero {
       padding-top: 10px;
-      background-position: -800px 0px; } }
+      background-position: -400px 0px; } }
   section#hero header {
     text-align: center;
     font-family: "Lato", "Myriad Pro";
@@ -84,6 +80,9 @@ section#hero {
       margin-left: auto;
       margin-right: auto;
       letter-spacing: 10px; }
+      @media screen and (max-width: 768px) {
+        section#hero header .hero-title {
+          font-size: 2em; } }
     section#hero header .hero-text {
       color: #fff;
       margin-top: 54px;
@@ -103,6 +102,9 @@ section#hero {
   position: relative;
   font-family: "Lato", "Myriad Pro";
   color: #3c3c3c; }
+  @media screen and (max-width: 768px) {
+    .part-square-container {
+      margin: 0 10px; } }
   .part-square-container .square-title {
     position: absolute;
     text-transform: uppercase;
@@ -114,6 +116,12 @@ section#hero {
     top: -20px;
     padding-left: 105px;
     padding-right: 105px; }
+    @media screen and (max-width: 768px) {
+      .part-square-container .square-title {
+        font-size: 1.4em;
+        padding-right: 10px;
+        padding-left: 10px;
+        top: -13px; } }
   .part-square-container .square-text {
     text-align: center;
     font-size: 1em;
@@ -121,6 +129,11 @@ section#hero {
     max-width: 555px;
     margin: 0 auto;
     margin-top: 62px; }
+    @media screen and (max-width: 768px) {
+      .part-square-container .square-text {
+        text-align: justify;
+        padding: 0 20px;
+        margin-top: 40px; } }
 
 section#about-us {
   padding-bottom: 160px;
@@ -197,6 +210,8 @@ section#our-works .flex-container {
     margin-right: 10px;
     margin-top: 10px;
     position: relative; }
+    section#our-works .flex-container .our-work-panel:hover {
+      cursor: pointer; }
     @media screen and (max-width: 1366px) {
       section#our-works .flex-container .our-work-panel {
         margin-right: 10px; } }

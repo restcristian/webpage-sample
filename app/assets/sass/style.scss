@@ -12,7 +12,7 @@
     position: relative;
 }
 
-body {
+body,.container {
     width: 100%;
     height: 100%;
 }
@@ -20,10 +20,7 @@ body {
 section {
     width: 100%;
     position: relative;
-    /*@media screen and (min-width: $phoneWidth) and (max-width: $tabletWidth) {
-        padding-left: 10px;
-        padding-right: 10px;
-    }*/
+
 }
 
 .responsive-background {
@@ -43,8 +40,10 @@ section#hero {
     @extend .responsive-background;
     @media screen and (max-width: $phoneWidth) {
         padding-top: 10px;
-        background-position: -800px 0px;
+        background-position: -400px 0px;
+        
     }
+   
     padding-top: 280px;
     padding-bottom: 112px;
     header {
@@ -62,6 +61,10 @@ section#hero {
             margin-left: auto;
             margin-right: auto;
             letter-spacing: 10px;
+
+             @media screen and (max-width: $phoneWidth) {
+                 font-size:2em;
+             }
         }
         .hero-text {
             color: $colorWhite;
@@ -87,6 +90,11 @@ section#hero {
     position: relative;
     font-family: $fontList;
     color: $colorGray;
+
+    @media screen and (max-width: $phoneWidth){
+        margin:0 10px;
+    }
+
     & .square-title {
         position: absolute;
         text-transform: uppercase;
@@ -98,6 +106,12 @@ section#hero {
         top: -20px;
         padding-left: 105px;
         padding-right: 105px;
+        @media screen and (max-width: $phoneWidth){
+            font-size:1.4em;
+            padding-right:10px;
+            padding-left:10px;
+            top:-13px;
+        }
     }
     & .square-text {
         text-align: center;
@@ -106,6 +120,12 @@ section#hero {
         max-width: 555px;
         margin: 0 auto;
         margin-top: 62px;
+        @media screen and (max-width: $phoneWidth) {
+            text-align:justify;
+            padding:0 20px;
+            margin-top:40px;
+        }
+        
     }
 }
 
@@ -200,6 +220,9 @@ section#our-works {
             margin-right: 10px;
             margin-top: 10px;
             position: relative;
+            &:hover{
+                cursor: pointer;
+            }
             @extend .responsive-background-no-fixed;
 
              @media screen and (max-width: $tabletWidth) {
