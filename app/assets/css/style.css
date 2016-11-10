@@ -226,6 +226,9 @@ section#our-works .flex-container {
     @media screen and (max-width: 1366px) {
       section#our-works .flex-container .our-work-panel {
         margin-right: 10px; } }
+    @media screen and (max-width: 768px) {
+      section#our-works .flex-container .our-work-panel {
+        margin-right: 0px; } }
     section#our-works .flex-container .our-work-panel:nth-child(1) {
       background-image: url("../imgs/work1.png"); }
     section#our-works .flex-container .our-work-panel:nth-child(2) {

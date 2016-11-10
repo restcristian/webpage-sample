@@ -233,6 +233,9 @@ section#our-works {
             @media screen and (max-width: $tabletWidth) {
                 margin-right: 10px;
             }
+             @media screen and (max-width: $phoneWidth) {
+                margin-right: 0px;
+            }
             &:nth-child(1) {
                 background-image: url('../imgs/work1.png');
             }
