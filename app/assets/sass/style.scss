@@ -40,7 +40,7 @@ section#hero {
     @extend .responsive-background;
     @media screen and (max-width: $phoneWidth) {
         padding-top: 10px;
-        background-position: -400px 0px;
+        background-position: -150px 0px;
     }
     padding-top: 280px;
     padding-bottom: 112px;
@@ -194,14 +194,12 @@ section#contact-us {
             font-weight: bold;
             //max-width: 395px;
             text-transform: uppercase;
-            
             letter-spacing: 3px;
             @include prefix(transition,
             background-color .3s ease);
             @media screen and (max-width: $phoneWidth) {
                 padding-right: 20%;
                 padding-left: 20%;
-                
             }
             &:hover {
                 cursor: pointer;
@@ -219,6 +217,7 @@ section#our-works {
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-between;
+        
         .our-work-panel {
             width: 450px;
             height: 230px;
@@ -233,7 +232,7 @@ section#our-works {
             @media screen and (max-width: $tabletWidth) {
                 margin-right: 10px;
             }
-             @media screen and (max-width: $phoneWidth) {
+            @media screen and (max-width: $phoneWidth) {
                 margin-right: 0px;
             }
             &:nth-child(1) {

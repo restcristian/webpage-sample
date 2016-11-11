@@ -65,7 +65,7 @@ section#hero {
   @media screen and (max-width: 768px) {
     section#hero {
       padding-top: 10px;
-      background-position: -400px 0px; } }
+      background-position: -150px 0px; } }
   section#hero header {
     text-align: center;
     font-family: "Lato", "Myriad Pro";
