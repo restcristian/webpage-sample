@@ -1,11 +1,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
-    imagemin = require('gulp-imagemin');
-
-function errorLog() {
-    console.error(e);
-}
+    imagemin = require('gulp-imagemin'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('watch', function() {
     gulp.watch('app/assets/sass/**/*.scss', ['sass']);
@@ -16,7 +13,11 @@ gulp.task('watch', function() {
 gulp.task('sass', function() {
     return gulp.src('app/assets/sass/**/*.scss')
         .pipe(sass())
-        .on('error', errorLog)
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascasde: false
+        }))
+        .on('error', sass.logError)
         .pipe(gulp.dest('app/assets/css'));
 });
 
@@ -29,8 +30,7 @@ gulp.task('imagemin', function() {
 gulp.task('scripts', function() {
     return gulp.src('app/assets/js/**/*.{json,js}')
         .pipe(concat('bundle.js'))
-        .on('error', errorLog)
-        .pipe(gulp.dest('app/assets/bundle.js'));
+        .pipe(gulp.dest('app/assets'));
 });
 
-gulp.task('default', ['sass', 'scripts', 'imagemin', 'watch']);
+gulp.task('default', ['sass', 'scripts', 'watch']);
