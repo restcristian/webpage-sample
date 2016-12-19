@@ -40,7 +40,7 @@ gulp.task('scriptmin', function() {
         .pipe(gulp.dest('app/assets/js'));
 });
 
-gulp.task('cssMin', function() {
+gulp.task('cssmin', function() {
     return gulp.src(PATHS.stylesCSS)
         .pipe(uglify())
         .pipe(gulp.dest(PATHS.stylesCSS));
