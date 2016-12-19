@@ -6,18 +6,19 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify');
 
 var PATHS = {
-    styles: 'app/assets/sass/**/*.scss',
+    stylesSASS: 'app/assets/sass/**/*.scss',
+    stylesCSS: 'app/ASSETS/css/**/',
     scripts: 'app/assets/js/**/*.js',
     images: 'app/assets/imgs/**/'
 };
 gulp.task('watch', function() {
-    gulp.watch(PATHS.styles, ['sass']);
+    gulp.watch(PATHS.stylesSASS, ['sass']);
     gulp.watch(PATHS.scripts, ['scripts']);
     gulp.watch(PATHS.images, ['imagemin'])
 });
 
 gulp.task('sass', function() {
-    return gulp.src(PATHS.styles)
+    return gulp.src(PATHS.stylesSASS)
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -31,6 +32,18 @@ gulp.task('imagemin', function() {
     return gulp.src(PATHS.images)
         .pipe(imagemin({ optimizationLevel: 5 }))
         .pipe(gulp.dest('app/assets/imgs-opt'));
+});
+
+gulp.task('scriptmin', function() {
+    return gulp.src(PATHS.scripts)
+        .pipe(uglify())
+        .pipe(gulp.dest('app/assets/js'));
+});
+
+gulp.task('cssMin', function() {
+    return gulp.src(PATHS.stylesCSS)
+        .pipe(uglify())
+        .pipe(gulp.dest(PATHS.stylesCSS));
 });
 
 gulp.task('scripts', function() {
